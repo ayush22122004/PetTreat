@@ -1,5 +1,11 @@
 PetTreat 🐾
 PetTreat is a web-based platform for pet lovers to explore and purchase pet products tailored for dogs and cats. The platform features a secure login/signup system, a user-friendly shopping experience, order management, and a product review system. Built with Django for the backend and React for the frontend, PetTreat ensures a seamless and dynamic user experience.
+Video:
+
+https://github.com/user-attachments/assets/277cbc9b-3bc3-403c-a63c-f247a4618d58
+
+
+
 
 🌟 Features
 User Authentication:
@@ -26,25 +32,6 @@ SQLite: For database management.
 Frontend:
 React: For building dynamic and responsive user interfaces.
 CSS: For styling the application.
-
-📂 Project Structure
-PetTreat/
-├── backend/
-│   ├── manage.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── models.py
-│   ├── views.py
-│   └── templates/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── App.js
-│   ├── public/
-│   └── package.json
-├── README.md
-└── .gitignore
 
 
 📧 Contact
