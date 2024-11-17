@@ -1,0 +1,90 @@
+/* Footer */
+.footer-div {
+    background-color: #fff; /* Change background color to white */
+    color: #100101; /* Update text color to ensure readability */
+    padding: 60px 0;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+footer .col img.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+footer .col h3 {
+    margin-bottom: 20px;
+    color: green;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .col p, footer .col ul, footer .col a {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Update this part to display links horizontally */
+footer .col ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Add this line to display links in a row */
+    justify-content: flex-start; /* Adjust as needed */
+}
+
+footer .col ul li {
+    margin-right: 20px; /* Space between links */
+}
+
+footer .col ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+footer .col ul li a:hover {
+    color: green;
+}
+
+footer .social i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: black;
+    transition: color 0.3s;
+}
+
+footer .social i:hover {
+    color: green;
+}
+
+/* Make the footer responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .col {
+        margin-bottom: 30px;
+    }
+}
+
+/* Copyright Section */
+.copy {
+    margin-left: 530px;
+}

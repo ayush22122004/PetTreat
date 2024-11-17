@@ -1,0 +1,48 @@
+.payment-form-container {
+    width: 400px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, 
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .payment-options {
+    margin-top: 20px;
+  }
+  
+  .payment-option {
+    margin-bottom: 15px;
+  }
+  
+  .qr-code {
+    margin-top: 10px;
+  }
+  
+  .qr-code img {
+    width: 150px;
+    height: 150px;
+  }
+  

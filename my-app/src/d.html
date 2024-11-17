@@ -1,0 +1,223 @@
+<!-- {/* <footer>
+    <div className='row'>
+        <div className='col'>
+            <img src={logo} className='logo'/>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div className='col'>
+            <h3>Office</h3>
+            <p>S.G Highway</p>
+            <p>Ahmedabad</p>
+            <p>Gujarat,382405,India</p>
+            <p className='email'>thakkarayush395@gmail.com</p>
+            <h4>+91 9106017391</h4>
+
+        </div>
+        <div className='col'>
+            <h3>Quick Links</h3>
+            <ul>
+                <li className='footer-link'><a href=''>Home</a></li>
+                <li className='footer-link'><a href=''>Dog</a></li>
+                <li className='footer-link'><a href=''>Cat</a></li>
+                <li className='footer-link'><a href=''>Shop By Breed</a></li>
+                <li className='footer-link'><a href=''>Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <div className='col'>
+            <div className='social'>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</footer> */}
+<h2 class="findify-components--text findify-components--cards--product__title">Pedigree Chicken and Vegetables Adult Dog Dry Food</h2>
+<div class="findify-components--cards--product--price__price findify-components--cards--product--price__sale-price">₹3,353</div>
+     illum consectetur dolores, temporibus totam quaerat excepturi et, accusamus sit quo itaque fuga, aliquam esse ea? Iusto in et ipsam error.
+     {
+        "description": "Pedigree Chicken and Vegetables Adult Dog Dry Food",
+        "rating": 4.9,
+        "price": 3315.00,
+        "mrp": 3900.00,
+        "size_options": [
+          {
+            "weight": "20kg",
+            "price": 3315.00,
+            "mrp": 3900.00
+          },
+          {
+            "weight": "370g",
+            "price": 100.00,
+            "mrp": 120.00
+          },
+          {
+            "weight": "1kg",
+            "price": 253.00,
+            "mrp": 269.00
+          },
+          {
+            "weight": "2.8kg",
+            "price": 603.00,
+            "mrp": 655.00
+          },
+          {
+            "weight": "5.5kg",
+            "price": 1251.00,
+            "mrp": 1390.00
+          },
+          {
+            "weight": "10kg",
+            "price": 2079.00,
+            "mrp": 2390.00 
+          }
+        ],
+        "category": "Dry Food"
+      }
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam sed cumque reprehenderit expedita, neque nobis autem vero tenetur officia explicabo aliquam voluptatibus quidem, veritatis possimus corrupti accusantium sit. Quas?
+      `http://localhost:8000/api/product_detail/${productId}/`
+      <div className="profile-container">
+        {/* Keep the existing user details logic intact */}
+        <div className="user-details-container">
+          {userDetails ? (
+            <div className="user-details-card">
+              <h1 className="user-details-header">User Details</h1>
+              <p><strong>Username:</strong> {userDetails.username}</p>
+              
+              {!isEditing ? (
+                <>
+                  <p><strong>Email:</strong> {userDetails.email}</p>
+                  <p><strong>Phone:</strong> {userDetails.phone}</p>
+                  <p><strong>Address:</strong> {userDetails.address}</p>
+                  <p><strong>City:</strong> {userDetails.city}</p>
+                  <p><strong>State:</strong> {userDetails.state}</p>
+                  <p><strong>PIN Code:</strong> {userDetails.pincode}</p>
+                  <p><strong>Country:</strong> {userDetails.country}</p>
+                  <button className="edit-button" onClick={handleEditToggle}>Edit Details</button>
+                </>
+              ) : (
+                <div className="edit-form">
+                  <h2>Edit Details</h2>
+                  <input
+                    className="input-field"
+                    type="email"
+                    name="email"
+                    value={contactDetails.email}
+                    onChange={handleChange}
+                    placeholder="Email"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="phone"
+                    value={contactDetails.phone}
+                    onChange={handleChange}
+                    placeholder="Phone"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="address"
+                    value={addressDetails.address}
+                    onChange={handleChange}
+                    placeholder="Address"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="city"
+                    value={addressDetails.city}
+                    onChange={handleChange}
+                    placeholder="City"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="state"
+                    value={addressDetails.state}
+                    onChange={handleChange}
+                    placeholder="State"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="pincode"
+                    value={addressDetails.pincode}
+                    onChange={handleChange}
+                    placeholder="PIN Code"
+                  />
+                  <input
+                    className="input-field"
+                    type="text"
+                    name="country"
+                    value={addressDetails.country}
+                    onChange={handleChange}
+                    placeholder="Country"
+                  />
+                  <div className="button-group">
+                    <button className="save-button" onClick={handleSave}>Save</button>
+                    <button className="cancel-button" onClick={handleEditToggle}>Cancel</button>
+                  </div>
+                </div>
+              )}
+            </div>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+
+        {/* Orders section */}
+        <div className="orders-section">
+            <h2>Your Orders</h2>
+            {orders.length > 0 ? (
+                <ul>
+                    {orders.map(order => (
+                        <li key={order.id}>
+                            <p>Order ID: {order.id}</p>
+                            <p>Product: {order.productName}</p>
+                            <p>Size: {order.size}</p>
+                            <p>Price: ₹{order.price}</p>
+                            <p>Ordered On: {new Date(order.orderDate).toLocaleString()}</p>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No orders found.</p>
+            )}
+        </div>
+
+        {/* Logout button */}
+        <div className="logout-section">
+            <button onClick={handleLogout}>Logout</button>
+        </div>
+    </div>
+    product_weight = models.CharField(max_length=50)
+    product_price = models.DecimalField(max_digits=10, decimal_places=2)
+    payment_method = models.CharField(max_length=50)
+    order_date = models.DateTimeField(auto_now_add=True)
+    <div className="login-container"></div>
+      <form onSubmit={handleSubmit}>
+        <h1>Login</h1>
+        <input
+          type="text"
+          name="username"
+          value={formData.username}
+          onChange={handleChange}
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+          placeholder="Password"
+          required
+        />
+        <a onClick={handleSignup} style={{cursor:'pointer'}}>Don't have any account?</a>
+        <button type="submit">Login</button>
+
+      </form>
+    </div> -->

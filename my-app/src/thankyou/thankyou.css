@@ -1,0 +1,82 @@
+/* Progress container */
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    height: 10px;
+  }
+  
+  
+  /* Progress bar styling */
+  .progress-bar {
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Icons for the different stages */
+  .progress-icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .progress-icons .icon {
+    font-size: 24px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  
+  .progress-icons .icon.active {
+    opacity: 1;
+  }
+  
+  /* Container for the thank you message */
+  .thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Button Styling */
+  .back-home-button {
+    background-color: #ff8000;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-home-button:hover {
+    background-color: #e06f00;
+  }
+  

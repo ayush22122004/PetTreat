@@ -1,0 +1,458 @@
+    .navbar {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white; /* White background */
+        padding: 10px 10%;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif; /* Ensure uniform font across browsers */
+    }
+
+    /* Logo Styling */
+    .logo {
+        width: 140px;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    /* Navbar Links */
+    ul {
+        flex: 1;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 20px; /* Space between links */
+        font-size: 16px;
+        cursor: pointer;
+        padding-top: 5px;
+    }
+
+    ul li a {
+        font-size: 30px; /* Change this value to the desired size */
+        color: black; /* Adjust the color if needed */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+    }
+
+    .links{
+        margin-top: 10px;
+        margin-right: 90px;
+    }
+    ul li a:hover {
+        color: darkgreen; /* Darker green on hover */
+    }
+
+    /* Cart and Profile Icons */
+    .cart,
+    .profile {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+    /* .cart img:hover,
+    .profile img:hover {
+        transform: scale(1.1); /* Slight scale-up on hover */
+    /* } */ */
+    .cart{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .profile{
+        margin-bottom: 7px;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
+    /* Mobile Menu Icon */
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    /* Media Queries for Mobile */
+    @media screen and (max-width: 768px) {
+        .navbar {
+            padding: 15px 5%;
+        }
+
+        ul {
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            display: none;
+        }
+
+        ul.nav-links-mobile {
+            display: flex;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .cart,
+        .profile {
+            flex: 1;
+            margin-left: 0;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+    }
+
+        /* carousel style */
+        .carousel-indicators [data-bs-target]{
+            border-radius:100%;
+            width: 10px;
+            height:10px;
+        }
+        .categories{
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+        }
+        .card{
+            cursor: pointer;
+        }
+        .card a {
+            text-decoration: none;
+        }
+                
+        .card h1 {
+            justify-content: center;
+            font-weight: bold;
+            color: black;
+            margin-left: 50px;
+        }
+        
+
+        .labels {
+            font-weight: bolder;
+            margin-top: 10px;
+            text-decoration: none; /* Prevent underline for category name */
+            color: black; /* Ensure text is black */
+            text-align: center;
+            margin-right: 30px;
+            margin-top: 40px;
+        }
+        /* reviews */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 600px; /* You can adjust the height value */
+            max-height: 900px;
+            padding: 20px;
+            background-color: #f8f9fa; /* Background color for better visibility */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .card-container:hover{
+            box-shadow: 0px 0px 15px 0px;
+        }
+        .image-container img{
+            overflow: hidden;
+            height: 330px;
+            
+        }
+        .card-content {
+            flex-grow: 1; /* Ensure content stretches to fill space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-body p {
+            margin: 10px 0;
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        /* Footer */
+        /* Add margin between the reviews section and the footer */
+        .categories {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+            
+        }
+        .card:hover {
+            box-shadow: 0px 0px 15px 0px; /* Add a hover effect */
+        }
+        
+        /* Footer */
+    .footer-div {
+        background-color: #fff; /* Change background color to white */
+        color: #100101; /* Update text color to ensure readability */
+        padding: 60px 0;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .col {
+        flex: 1 1 200px;
+        margin: 10px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    footer .col img.footer-logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    footer .col h3 {
+        margin-bottom: 20px;
+        color: green;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    footer .col p, footer .col ul, footer .col a {
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    /* Update this part to display links horizontally */
+    footer .col ul {
+        list-style: none;
+        padding: 0;
+        display: flex; /* Add this line to display links in a row */
+        justify-content: flex-start; /* Adjust as needed */
+    }
+
+    footer .col ul li {
+        margin-right: 20px; /* Space between links */
+    }
+
+    footer .col ul li a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    footer .col ul li a:hover {
+        color: green;
+    }
+
+    footer .social i {
+        font-size: 24px;
+        margin-right: 15px;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    footer .social i:hover {
+        color: green;
+    }
+
+    /* Make the footer responsive */
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: column;
+        }
+
+        footer .col {
+            margin-bottom: 30px;
+        }
+    }
+    .review-form-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        max-width: 500px;
+        margin: 2rem auto;
+    }
+    
+    .review-form-title {
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .review-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .review-textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+    
+    .review-file-input {
+        padding: 0.5rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 4px;
+    }
+    
+    .review-rating-input {
+        width: 100%;
+    }
+    
+    .review-submit-button {
+        background-color: #4a90e2;
+        color: white;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .review-submit-button:hover {
+        background-color: #3a7bd5;
+    }
+    
+    @media (max-width: 768px) {
+        .review-form-container {
+        padding: 1.5rem;
+        margin: 1rem;
+        }
+    }
+    /* Container for the form */
+    /* Container for the form */
+    .review {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Form header */
+    .review h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Textarea for review */
+    .review-textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-family: inherit;
+        resize: none;
+        outline: none;
+    }
+
+    /* Input field for image upload */
+    .image-upload {
+        width: 100%;
+        border: 1px dashed #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-family: inherit;
+        cursor: pointer;
+        background-color: #f9f9f9;
+    }
+
+    .image-upload::file-selector-button {
+        display: none;
+    }
+
+    .image-upload:hover {
+        border-color: #999;
+    }
+
+    /* Input for rating */
+    .rating-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-family: inherit;
+        outline: none;
+    }
+
+    /* Buttons */
+    button {
+        width: 48%;
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 0 1%;
+    }
+
+    /* Submit button */
+    button[type="submit"] {
+        background-color: #fff;
+        border: 2px solid #ccc;
+        color: #000;
+    }
+
+    /* Next button (if used) */
+    button[type="button"] {
+        background-color: #FFD700; /* Yellow background like the image */
+        border: none;
+        color: white;
+    }
+
+    button:hover {  
+        opacity: 0.9;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .col {
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .copy{
+        margin-left: 530px;
+    }
